@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Terminal Grotesque";
+    src: url("fonts/terminal-grotesque.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1F1F1F;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+header h1 {
+    color: #FACA06;
+    text-shadow: 4px 4px 0 #B51313;
+    font-family: Inter;
+    font-size: 54px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+}
+
+nav a {
+    color: #FFFF;
+    font-family: "Terminal Grotesque";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+nav a:hover {
+    color: #ffb700;
+}
+
+/* Horizontal Rule */
+hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0 60px;
+}
+
+/* HERO SECTION (was main) */
+#hero {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    text-align: center;
+}
+
+#hero h2 {
+    color: #F8CD00;
+    -webkit-text-stroke: 1px #000;
+    font-family: "Terminal Grotesque";
+    font-size: 54px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+}
+
+#hero h1 {
+    color: #F8CD00;
+    text-shadow: 10px 10px 4px #F45503;
+    -webkit-text-stroke: 1px #000;
+    font-family: "Terminal Grotesque";
+    font-size: 81px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+}
+
+#hero > p {
+    color: #FFF;
+    text-align: center;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff5722;
+    color: #ffffff;
+    border: none;
+    padding: 18px 50px;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+button:active {
+    transform: scale(0.98);
+}
