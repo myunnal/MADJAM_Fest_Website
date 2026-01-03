@@ -61,25 +61,28 @@ hr {
     margin: 0 60px;
 }
 
-/* HERO SECTION (was main) */
+/* HERO SECTION */
 #hero {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 60px;
     text-align: center;
+    position: relative;
 }
 
 #hero h2 {
     color: #F8CD00;
     -webkit-text-stroke: 1px #000;
     font-family: "Terminal Grotesque";
-    font-size: 54px;
+    font-size: 48px;
     font-weight: 400;
     text-align: left;
-    width: 100%;
+    max-width: 600px;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
 #hero h1 {
@@ -87,20 +90,27 @@ hr {
     text-shadow: 10px 10px 4px #F45503;
     -webkit-text-stroke: 1px #000;
     font-family: "Terminal Grotesque";
-    font-size: 81px;
+    font-size: 96px;
     font-weight: 400;
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 #hero > p {
     color: #FFF;
     text-align: center;
     font-family: "Terminal Grotesque";
-    font-size: 36px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin: 0 auto 40px auto;
+    width: 100%;
+}
+
+#hero button {
+    display: block;
+    margin: 0 auto;
 }
 
 /* Button Styles */
