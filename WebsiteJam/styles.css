@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:"Terminal Grotesque";
     background-color: #1F1F1F;
     color: #ffffff;
     min-height: 100vh;
@@ -20,12 +20,12 @@ body {
     flex-direction: column;
 }
 
-/* Header Styles */
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 60px;
+    
 }
 
 header h1 {
@@ -54,14 +54,14 @@ nav a:hover {
     color: #ffb700;
 }
 
-/* Horizontal Rule */
+
 hr {
     border: none;
     border-top: 1px solid #333;
     margin: 0 60px;
 }
 
-/* HERO SECTION */
+
 #hero {
     flex: 1;
     display: flex;
@@ -129,7 +129,9 @@ button {
 }
 
 button:hover {
-    background-color: #e64a19;
+    color: white;
+    background-color: #1F1F1F;
+    box-shadow: 4px 4px 2px 2px #ff5722;
 }
 
 button:active {
