@@ -20,7 +20,7 @@ body {
     flex-direction: column;
 }
 
-/* Header Styles */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -39,6 +39,7 @@ header h1 {
 nav {
     display: flex;
     gap: 40px;
+    justify-content: space-between;
 }
 
 nav a {
@@ -47,7 +48,9 @@ nav a {
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
+    text-align: right;
     line-height: normal;
+    
 }
 
 nav a:hover {
@@ -129,9 +132,66 @@ button {
 }
 
 button:hover {
-    background-color: #e64a19;
+     color: white;
+    background-color: #1F1F1F;
+    box-shadow: 4px 4px 2px 2px #ff5722;
 }
 
 button:active {
     transform: scale(0.98);
+}
+
+.about {
+margin: 5%;
+border-radius: 30px;
+background: #1F1F1F;
+box-shadow: -19px 25px 4px 0 rgba(0, 0, 0, 0.25);
+display: flex;
+text-align:justify ;
+justify-content: space-between;
+
+}
+
+.left-text, .right-text {
+  display: inline-block;
+  width: 50%;
+  font-size: 16px;
+}
+ 
+
+.left-text{
+text-align: left;
+color: #FFF;
+font-family: "Terminal Grotesque";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;
+padding: 20px;
+}
+
+.right-text{
+
+text-align: center;
+padding: 20px;
+color: #FFF;
+font-family: "Terminal Grotesque";
+font-size: 24px;
+font-style: normal;
+line-height: normal;
+font-weight: 400;
+
+}
+
+h2{
+color: #F8CD00;;
+margin-bottom: 10%;
+}
+
+.logomad{
+aspect-ratio: 16/17;
+width: 96px;
+height: 102px;
+text-align: center;
 }
