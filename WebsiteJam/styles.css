@@ -179,7 +179,6 @@ padding: 20px;
 }
 
 .right-text{
-
 text-align: center;
 padding: 20px;
 color: #FFF;
@@ -188,7 +187,6 @@ font-size: 24px;
 font-style: normal;
 line-height: normal;
 font-weight: 400;
-
 }
 
 h2{
@@ -199,16 +197,16 @@ margin-bottom: 10%;
 .logomad{
 width: 96px;
 height: 102px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
 }
 
 .imglocation{
-    width: 400px; 
-    height: auto;
-    border-radius: 20px;
-    margin-top: 20px;
+width: 400px; 
+height: auto;
+border-radius: 20px;
+margin-top: 20px;
 }
 
 #jamblocks {
@@ -282,9 +280,13 @@ filter: drop-shadow(-10px 10px 4px rgba(0, 0, 0, 0.25));
 .back p {
 color: #ffffff;
 font-family: "Terminal Grotesque";
-font-size: 16px;
-text-align: center;
+font-size: 24px;
+text-align: justify;
 line-height: 1.6;
+width: 207px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
 
