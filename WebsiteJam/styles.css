@@ -9,6 +9,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
@@ -27,6 +28,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 20px 60px;
+    text-decoration: none;
     
 }
 
@@ -291,12 +293,54 @@ line-height: normal;
 
 
 #opencall{
-   margin: 5%;
+margin: 5%;
 display: flex;
 text-align:justify ;
-justify-content: space-between;
+justify-content: center;
 padding: 20px;
 gap: 20px; 
+flex-wrap: wrap;
+}
+
+.opencall-container{
+    width: 451px;
+    height: 204.225px;
+    perspective: 1000px;
+}
+
+.opencallimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  opacity: 0;
+  transition: .5s ease;  
+  background-size: cover; 
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opencall-container:hover .overlay {
+  opacity: 1;
+}
+
+.backofcardtext {
+  color: white;
+  font-size: 24px;
+  font-family: "Terminal Grotesque";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  width: 379px;
 }
 
 h3 {
