@@ -393,11 +393,42 @@ align-self: center;
     }
 
 .footer{
-  position: static;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: #000;
-  text-align: center;
-  padding: 20px;
+    position: static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+    min-height: 473px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.footer-left a, p{
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    color: #FFF;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 541px;
+    height: 65px;
+}
+
+.footer-right p{
+    color: #FFF;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: right;
 }
