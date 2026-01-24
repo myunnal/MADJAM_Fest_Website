@@ -395,6 +395,12 @@ align-self: center;
     position: relative;
     }
 
+#history{
+    display: flex;
+    justify-content: center;
+   
+}
+
 .footer{
     width: 100%;
     background-color: #000;
