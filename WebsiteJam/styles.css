@@ -529,7 +529,7 @@ body > button {
 .pixelimg {
     position: absolute;
     right: 60px;
-    top: 30%; /* Changed from 50% to move it higher */
+    top: 30%; 
     transform: translateY(-50%);
     width: 900px;
     height: auto;
@@ -583,4 +583,51 @@ body > button {
 .faq-item:hover .faq-answer {
     max-height: 200px;
     opacity: 1;
+}
+
+/* Timeline dots */
+.timeline-dots {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin: 40px 0;
+}
+
+.dot {
+  font-family: "Terminal Grotesque";
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 2px solid #666;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.25s ease;
+}
+
+.dot.active {
+  background: #F8CD00;
+  color: #000;
+  border-color: #F8CD00;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+#history-container { 
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+#history-container::-webkit-scrollbar {
+  display: none;
+}
+
+.history-slide {
+  min-width: 100vw;
+  padding: 40px 20px;
+  scroll-snap-align: center;
+  text-align: center;
 }
