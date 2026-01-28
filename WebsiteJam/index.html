@@ -6,6 +6,15 @@
     <title>Mad Jam Fest</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Terminal Grotesque';
+            src: url("fonts/terminal-grotesque.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
 </head>
 <body>
 
@@ -26,6 +35,7 @@
     <h1>#EPICSHIT!</h1>
     <p>#BeMad on this big edition!</p>
     <button>JOIN US!</button>
+ <img class="pixelimg" src="images/Group 57.svg" style="justify-content: right;">
 </section>
 
 
@@ -129,19 +139,83 @@
 
 <section id="hero">
     <h2>Previous years</h2>
+    <br>
+  
+    <div style="display: grid; grid-template-columns: repeat(12, 1fr); grid-template-rows: repeat(8, 100px); gap: 20px;">
+       
+        <img src="images/index12.png" alt="2" style="grid-column: 5/7; grid-row: 1 / 3;">
+        
+        <img src="images/index123.png" alt="3" style="grid-column: 8/10; grid-row: 1/3;">
 
-    <p><strong>500+</strong> Participants</p>
-    <p><strong>100+</strong> Projects</p>
-    <p><strong>48h</strong> Creating</p>
+        <img src="images/index1.png" alt="1" style="grid-column: 8/13; grid-row: 3 / 6;">
 
-
+        <img src="images/index112345.png" alt="11" style="grid-column: 1 / 7; grid-row: 3 / 6;">
+        
+        <img src="images/index1234.png" alt="4" style="grid-column: 4/9; grid-row: 6 / 9;">
+        
+        <img src="images/index123456.png" alt="5" style="grid-column: 7/8; grid-row: 3 / 6;">
+        
+       
+        <div style="grid-column: 1 / 13; grid-row: 1 / 9; position: relative; pointer-events: none;">
+            
+            <div style="position: absolute; top: 50px; left: 50px;">
+                <span style="font-size: 48px; color: #f4b942; font-family: 'Terminal grotesque'; font-weight: bold;">500+</span><br>
+                <span style="font-family: 'Terminal grotesque'; font-size: 24px; color: white;">Participants</span>
+            </div>
+            
+            <div style="position: absolute; bottom: 200px; left: 50px;">
+                <span style="font-size: 48px; color: #f4b942; font-family: 'Terminal grotesque'; font-weight: bold;">+100</span><br>
+                <span style="font-family: 'Terminal grotesque'; font-size: 24px; color: white;">projects</span>
+            </div>
+            
+            <div style="position: absolute; top: 400px; left: 600px;">
+                <span style="font-size: 48px; color: #ff5722; font-family:'Terminal grotesque'; font-weight: bold;">48h</span><br>
+                <span style="font-family: 'Terminal grotesque'; font-size: 20px; color: white;">creating</span>
+            </div>
+            
+        </div>
+        
+    </div> 
+    
 </section>
-
 
 
 <section id="faq">
     <h2>FAQ'S</h2>
-
+    <div class="faq-container">
+        <div class="faq-item">
+            <div class="faq-question">How do I join?</div>
+            <div class="faq-answer">Register on our website by clicking the JOIN US button and fill out the form with your details.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I find a team?</div>
+            <div class="faq-answer">Go to our discord's get-a-team page and chat with possible new teammattes</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Can I join alone?</div>
+            <div class="faq-answer">If you don't have a team, you can sign up on your own. The organizers will then place you with other participants in the same situation or with an existing group</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">I'm an Erasmus student. Can I join?</div>
+            <div class="faq-answer">Absolutely! We welcome international students. The event is open to everyone.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How many people can have in a team?</div>
+            <div class="faq-answer">Teams can have between 1-5 members depending on the category you're participating in.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">What if none of the categories fit me?</div>
+            <div class="faq-answer">Check out our open call for performance and media arts, or join as a volunteer!</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">Is it necessary to have experience?</div>
+            <div class="faq-answer">No experience needed! All skill levels are welcome. It's about creativity and having fun.</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">How can I get to ESMAD?</div>
+            <div class="faq-answer">ESMAD is located in Vila do Conde. You can reach us by public transport or car. Check the map in the About section.</div>
+        </div>
+    </div>
 </section>
 
 
