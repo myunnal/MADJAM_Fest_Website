@@ -409,33 +409,65 @@ align-self: center;
 .footer{
     width: 100%;
     background-color: #000;
-    text-align: center;
-    padding: 20px;
-    min-height: 473px;
+    padding: 50px 80px 30px 80px;
+    min-height: 350px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: auto;
     margin-top: 50px;
 }
 
-.footer-left a, .footer-left p{
-    color: #fff;
-    text-decoration: none;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.footer-left {
     display: flex;
     flex-direction: column;
-    text-align: left;
-    justify-content: center;
+    gap: 15px;
+    flex: 1;
+}
+
+.footer-left a {
     color: #FFF;
+    text-decoration: none;
+    text-align: left;
     font-family: "Terminal Grotesque";
     font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    width: 541px;
-    height: 65px;
-    margin-left: 10%;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+.footer-left a:hover {
+    color: #F8CD00;
+}
+
+.footer-left p {
+    color: #FFF;
+    text-align: left;
+    font-family: "Terminal Grotesque";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 15px 0 0 0;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
 }
 
 .footer-right p{
@@ -446,9 +478,47 @@ align-self: center;
     font-weight: 400;
     line-height: normal;
     text-align: right;
+    margin: 0 0 10px 0;
+}
+
+.website-logos {
     display: flex;
-    margin-right: 50px;
-    margin-top: 10px;
+    gap: 20px;
+    align-items: center;
+}
+
+.website-logos a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.website-logos img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.website-logos img:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    color: #FFF;
+    font-family: "Terminal Grotesque";
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0;
 }
 
 body > button {
