@@ -410,7 +410,6 @@ align-self: center;
 }
 
 .footer-left a, .footer-left p{
-    margin: 10px 0;
     color: #fff;
     text-decoration: none;
     display: flex;
@@ -438,6 +437,7 @@ align-self: center;
     text-align: right;
     display: flex;
     margin-right: 50px;
+    margin-top: 10px;
 }
 
 body > button {
