@@ -586,6 +586,31 @@ body > button {
     opacity: 1;
 }
 
+/*jams page*/
+
+.Top-text h4{
+    color: #FECF05;
+    text-align: center;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 55px;
+}
+
+.Top-text h5{
+    color: #FFF;
+    text-align: center;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/*history page*/
+
 #timeline {
   padding: 60px 0 40px;
   overflow: hidden;
