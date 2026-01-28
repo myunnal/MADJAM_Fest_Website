@@ -45,7 +45,7 @@ header h1 {
 }
 
 nav {
-
+    padding: 20px 1% 20px 60px;
     margin-left: auto;
     display: flex;
     gap: 1.5rem;
@@ -627,6 +627,7 @@ body > button {
     line-height: normal;
     margin-bottom: 10px;
 }
+
 
 /*history page*/
 
