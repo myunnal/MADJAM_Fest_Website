@@ -875,6 +875,16 @@ body > button {
     }
 }
 
+.jam-block:not(.expanded):hover {
+    transform: scale(1.05);
+    filter: drop-shadow(-12px 12px 6px rgba(0, 0, 0, 0.35));
+    cursor: pointer;
+}
+
+.jam-block:not(.expanded) {
+    transition: all 0.3s ease;
+}
+
 .join-us-section {
     display: flex;
     justify-content: center;
@@ -993,6 +1003,8 @@ body > button {
 .discord-icon a:hover {
     transform: scale(1.1);
 }
+
+
 
 /*history page*/
 
