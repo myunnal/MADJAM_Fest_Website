@@ -875,8 +875,124 @@ body > button {
     }
 }
 
+.join-us-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+}
 
+.join-us-btn {
+    background-color: #ff5722;
+    color: #000000;
+    border: none;
+    padding: 20px 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    font-family: "Terminal Grotesque";
+}
 
+.join-us-btn:hover {
+    color: white;
+    background-color: #1F1F1F;
+    box-shadow: 4px 4px 2px 2px #ff5722;
+}
+
+.join-us-btn:active {
+    transform: scale(0.98);
+}
+
+.discord-section {
+    margin: 80px 5% 60px 5%;
+}
+
+.discord-card {
+    border-radius: 30px;
+    background: #1F1F1F;
+    box-shadow: -19px 25px 4px 0 rgba(0, 0, 0, 0.25);
+    padding: 50px 60px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.discord-card h3 {
+    color: #FB5404;
+    text-align: center;
+    font-family: "Terminal Grotesque";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 4%;
+}
+
+.discord-card-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.discord-text {
+    text-align: left;
+    flex: 1;
+}
+
+.discord-text p {
+    color: #ffffff;
+    font-family: "Terminal Grotesque";
+    font-size: 24px;
+    margin: 8px 0;
+}
+
+.discord-icon {
+    flex-shrink: 0;
+}
+
+.discord-icon img {
+    width: 120px;
+    height: 120px;
+}
+
+@media (max-width: 768px) {
+    .discord-card {
+        padding: 40px 30px;
+    }
+    
+    .discord-card h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .discord-card-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .discord-text {
+        text-align: center;
+    }
+    
+    .discord-icon img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.discord-icon a {
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.discord-icon a:hover {
+    transform: scale(1.1);
+}
 
 /*history page*/
 
