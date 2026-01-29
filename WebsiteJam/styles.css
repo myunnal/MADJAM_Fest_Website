@@ -719,8 +719,8 @@ body > button {
 .jam-block-expanded p {
     color: #ffffff;
     font-family: "Terminal Grotesque";
-    font-size: 18px;
-    line-height: 1.6;
+    font-size: 24px;
+    line-height: 1.2;
     text-align: justify;
     margin: 0;
 }
@@ -730,9 +730,9 @@ body > button {
 }
 
 .rules-section h4 {
-    color: #FECF05;
+    color: #FFF;
     font-family: "Terminal Grotesque";
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -745,8 +745,8 @@ body > button {
 .rules-section li {
     color: #ffffff;
     font-family: "Terminal Grotesque";
-    font-size: 17px;
-    line-height: 1.6;
+    font-size: 24px;
+    line-height: 1.2;
     margin-bottom: 10px;
     padding-left: 20px;
     position: relative;
@@ -757,11 +757,11 @@ body > button {
     position: absolute;
     left: 0;
     color: #FECF05;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .rules-section p {
-    font-size: 17px;
+    font-size: 24px;
     margin-top: 15px;
 }
 
@@ -874,6 +874,7 @@ body > button {
         flex-wrap: wrap;
     }
 }
+
 
 
 
