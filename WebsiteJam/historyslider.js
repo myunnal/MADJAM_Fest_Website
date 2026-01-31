@@ -46,25 +46,56 @@ function updateTimeline(index) {
     topText.style.transform = "translateY(0)";
   }, 200);
 
-  const dotSize = 48;
-  const activeDotSize = 80;
-  const gap = 123;
+  alignDotToYear(index);
+}
 
+function alignDotToYear(index) {
   const yearRect = yearDisplay.getBoundingClientRect();
   const yearCenterX = yearRect.left + yearRect.width / 2;
 
-  const dotCenterX =
-    index * (dotSize + gap) +
-    activeDotSize / 2;
-
-  const offset = yearCenterX - dotCenterX - 34;
-  dotsWrapper.style.transform = `translateX(${offset}px)`;
+  const containerRect = document.querySelector('.timeline-dots-container').getBoundingClientRect();
+  const containerCenterX = containerRect.left + containerRect.width / 2;
+  
+  const yearOffset = yearCenterX - containerCenterX;
+  
+  const totalDots = dots.length;
+  const gap = 123;
+  const normalDotSize = 48; 
+  const activeDotSize = 80;
+  
+  let totalWidth = 0;
+  for (let i = 0; i < totalDots; i++) {
+    if (i === index) {
+      totalWidth += activeDotSize;
+    } else {
+      totalWidth += normalDotSize;
+    }
+    if (i < totalDots - 1) {
+      totalWidth += gap;
+    }
+  }
+  
+  let dotPosition = 0;
+  for (let i = 0; i < index; i++) {
+    dotPosition += normalDotSize + gap;
+  }
+  dotPosition += activeDotSize / 2;
+  
+  const dotOffsetFromCenter = dotPosition - (totalWidth / 2);
+  
+  const finalOffset = yearOffset - dotOffsetFromCenter;
+  
+  dotsWrapper.style.transform = `translateX(${finalOffset}px)`;
 }
 
 dots.forEach(dot => {
   dot.addEventListener("click", () => {
     updateTimeline(Number(dot.dataset.index));
   });
+});
+
+window.addEventListener('resize', () => {
+  alignDotToYear(currentIndex);
 });
 
 updateTimeline(0);
